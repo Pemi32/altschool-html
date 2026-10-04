@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create an account to apply to AltSchool Africa.">
+  <title>Create Account (AltSchool Africa Application Page)</title>
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Global navigation">
+      <ul>
+        <li><a href=index.html>Home (Assignment 1)</a></li>
+        <li><a href=#altschool aria-current="page">Application Form</a></li>
+      </ul>
+    </nav>
+    <h1 id="altschool">AltSchool Africa</h1>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Create your account</h2>
+      <p>Fill in your details below to start your application. Fields marked with <span aria-hidden="true">*</span><span>(required)</span> must be completed.</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <p>
+            <label for="first-name">First name <span aria-hidden="true">*</span></label><br>
+            <input type="text" id="first-name" name="first_name" autocomplete="given-name" placeholder="Enter your first name" required>
+          </p>
+
+          <p>
+            <label for="last-name">Last name <span aria-hidden="true">*</span></label><br>
+            <input type="text" id="last-name" name="last_name" autocomplete="family-name" placeholder="Enter your last name" required>
+          </p>
+
+          <p>
+            <label for="email">Email address <span aria-hidden="true">*</span></label><br>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label><br>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+234 800 000 0000" aria-describedby="phone-hint" required>
+            <br><small id="phone-hint">Include your country code, e.g. +234.</small>
+          </p>
+
+          <p>
+            <label for="dob">Date of birth <span aria-hidden="true">*</span></label><br>
+            <input type="date" id="dob" name="dob" autocomplete="bday" required>
+          </p>
+
+          <fieldset>
+            <legend>Gender <span aria-hidden="true">*</span></legend>
+            <p>
+              <input type="radio" id="gender-female" name="gender" value="female" required>
+              <label for="gender-female">Female</label>
+              <input type="radio" id="gender-male" name="gender" value="male">
+              <label for="gender-male">Male</label>
+              <input type="radio" id="gender-other" name="gender" value="other">
+              <label for="gender-other">Prefer not to say</label>
+            </p>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Location</legend>
+
+          <p>
+            <label for="country">Country <span aria-hidden="true">*</span></label><br>
+            <select id="country" name="country" autocomplete="country-name" required>
+              <option value="">Select your country</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="ghana">Ghana</option>
+              <option value="kenya">Kenya</option>
+              <option value="south-africa">South Africa</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="state">State / Region <span aria-hidden="true">*</span></label><br>
+            <input type="text" id="state" name="state" autocomplete="address-level1" placeholder="Enter your state or region" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Program Choice</legend>
+
+          <p>
+            <label for="school">School of study <span aria-hidden="true">*</span></label><br>
+            <select id="school" name="school" required>
+              <option value="">Select a school</option>
+              <option value="engineering">School of Engineering</option>
+              <option value="product">School of Product</option>
+              <option value="data">School of Data</option>
+              <option value="cybersecurity">School of Cybersecurity</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="referral">How did you hear about us?</label><br>
+            <select id="referral" name="referral">
+              <option value="">Select an option</option>
+              <option value="social-media">Social media</option>
+              <option value="friend">Friend or family</option>
+              <option value="search">Search engine</option>
+              <option value="event">Event</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Security</legend>
+
+          <p>
+            <label for="password">Password <span aria-hidden="true">*</span></label><br>
+            <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" aria-describedby="password-hint" required>
+            <br><small id="password-hint">Use at least 8 characters.</small>
+          </p>
+
+          <p>
+            <label for="confirm-password">Confirm password <span aria-hidden="true">*</span></label><br>
+            <input type="password" id="confirm-password" name="confirm_password" autocomplete="new-password" minlength="8" required>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a> <span aria-hidden="true">*</span></label>
+        </p>
+
+        <p>
+          <button type="submit">Create account</button>
+          <button type="reset">Clear form</button>
+        </p>
+      </form>
+
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Olowolayemo Jesupemi<br>
+      Korede Avenue, Oda town<br>
+      Akure, Nigeria<br>
+      <a href=mailto:olowolayemojesupemi42@gmail.com>olowolayemojesupemi42@gmail.com</a>
+    </address>
+    <p>&copy; 2026 Olowolayemo Jesupemi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
